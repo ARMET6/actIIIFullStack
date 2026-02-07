@@ -15,7 +15,7 @@ const leerArchivo = async (archivo) => {
         const data = await fs.readFile(archivo, 'utf-8');
         return JSON.parse(data);
     } catch (error) {
-        return []; // Si el archivo no existe, retornamos array vacío
+        return []; 
     }
 };
 
@@ -129,6 +129,7 @@ app.use((err, req, res, next) => {
         message: err.message
     });
 });
+
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
