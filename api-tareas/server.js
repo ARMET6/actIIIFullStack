@@ -8,6 +8,7 @@ const PORT = 3000;
 const SECRET_KEY = "mi_clave_secreta_super_segura";
 
 app.use(express.json());
+app.use(express.static('public'));
 
 // --- UTILIDADES PARA ARCHIVOS (fs.promises) ---
 const leerArchivo = async (archivo) => {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-container">
+        <div id="login-section">
+           <h2>Iniciar Sesión</h2>
+           <input type="text" id="username" placeholder="Usuario">
+           <input type="password" id="password" placeholder="Contraseña">
+           <button onclick="handleLogin()">Entrar</button>
+           <p>¿No tienes cuenta? <a href="#" onclick="toggleAuth(true)">Regístrate aquí</a></p>
+        </div>
+
+        <div id="register-section" style="display:none;">
+            <h2>Crear Cuenta</h2>
+            <input type="text" id="reg-username" placeholder="Nuevo Usuario">
+            <input type="password" id="reg-password" placeholder="Nueva Contraseña">
+            <button onclick="handleRegister()" style="background: #007bff;">Registrarse</button>
+            <p>¿Ya tienes cuenta? <a href="#" onclick="toggleAuth(false)">Inicia sesión</a></p>
+        </div>
+    </div>
+
+    <div id="app-container" style="display:none;">
+        <h2>Mis Tareas</h2>
+        <div style="margin-bottom: 20px;">
+            <input type="text" id="titulo" placeholder="Título de la tarea">
+            <input type="text" id="desc" placeholder="Descripción">
+            <button onclick="crearTarea()">+ Agregar Tarea</button>
+        </div>
+        <ul id="lista-tareas"></ul>
+        <hr>
+        <button onclick="logout()" style="background: #6c757d;">Cerrar Sesión</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

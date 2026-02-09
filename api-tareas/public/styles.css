@@ -1,0 +1,27 @@
+body { font-family: sans-serif; background: #f4f4f4; display: flex; justify-content: center; padding: 50px; }
+#auth-container, #app-container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 350px; }
+input { width: 100%; margin-bottom: 10px; padding: 8px; box-sizing: border-box; }
+button { width: 100%; padding: 10px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #218838; }
+ul { list-style: none; padding: 0; }
+li { background: #eee; margin: 5px 0; padding: 10px; border-radius: 4px; display: flex; justify-content: space-between; }
+a {
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+/* Para que cambie de color cuando pases el mouse encima */
+a:hover {
+    color: #0056b3;
+    text-decoration: underline; 
+}
+
+li div {
+    display: flex;
+    gap: 5px; /* Separa los botones ligeramente */
+}
+
+li {
+    align-items: center; /* Centra verticalmente el texto con los botones */
+}

@@ -48,3 +48,5 @@ Para revisar y probar este proyecto en un entorno local, siga los pasos detallad
 ## Evidencia de Funcionamiento
 * Video Demostrativo: [https://youtu.be/ooTvu5gNjVw]
 * Documentación: Se adjunta de forma complementaria un archivo Word con las capturas de pantalla de las pruebas de integración realizadas.
+
+Se integró una interfaz gráfica desarrollada con HTML5 y CSS3, conectada a la API mediante Fetch API, permitiendo una gestión visual de las tareas y el inicio de sesión del usuario.
